@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>月付房租办理</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div class="head">爱租哪
+     <a href="" class="head-1"></a>
+    </div>
+    <div class="tead">
+        <div class="yuan3">
+            <div class="shang1"></div>
+            <span class="wen">审核</span>
+        </div>
+        <div class="yuan2">
+             <div class="shang2"></div>
+            <span class="wen">租房资料</span>
+        </div>
+        <div class="yuan">
+             <div class="shang">
+                 <div class="ti"></div>
+             </div>
+            <span class="wen">身份信息</span>
+        </div>
+        <div class="tuew-con">
+        <div class="tuew"></div>
+        <div class="tuew1"></div>
+           </div>
+        </div>
+         <div class="test">
+                 <div class="qi-noe t1">租约开始日
+                 <input type="date" class="se1" value="2015-10-10"></div>
+                 <div class="qi-noe t2">租期
+                 <input type="text" class="se" placeholder="请输入身份证号码"></div>
+                 
+                 <div class="qi-noe t3">月租金
+                  <input type="text" class="se" placeholder="请输入常用银行卡卡号"></div>
+                 <div class="qi-noe t4">租金总额</div>
+                 <div class="qi-noe t4">分期金额</div>
+                 <div class="qi-noe t4">分期期数</div>
+                 <div class="qi-noe t7">业务手机经理
+                 <input type="text" class="se" placeholder="联系公寓联系人手机号码"></div>
+                 <div class="qi-noe t4">房租合同
+                  <input type="text" class="se" placeholder="需看清合同信息">
+                  <div class="xiangji"></div>
+                  <input type="file" class="xiangji_">
+                  </div>
+           
+         </div>
+         <div class="loh">
+    <div class="cheak   h">
+    </div>
+      <span class="son1_">同意
+   <a href="">
+       《爱租月付会员服务协议》
+   </a>
+   </span>
+    </div>
+    <div class="loh">
+        <div class="lod">上一步</div>
+        <div class="logh">提交</div>
+    </div>
+    
+   
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script>
+$(function(){
+    $(".cheak").click(function(){
+        if( $(this).hasClass("h")){
+           $(this).removeClass("h");
+            $(this).children("input").attr("checked",false)
+           }else{
+               $(this).addClass("h");
+                 $(this).children("input").attr("checked",true)
+                }
+       
+    })
+})
+
+
+
+</script>

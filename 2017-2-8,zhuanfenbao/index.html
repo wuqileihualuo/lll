@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1, user-scalable=no">
+	<title></title>
+    <title>转分包手机端</title>
+    <link rel="stylesheet" href="css/css.css?dd">
+</head>
+<script src="./TouchSlide.1.1.js"></script>
+<!-- 若想了解更详细使用方法，请访问 http://www.superslide2.com/touchSlide/ -->
+
+<style type="text/css">
+	/* css 重置 */
+	body, p, input, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form { margin: 0; padding: 0; list-style: none; vertical-align: middle; font-weight:normal; }
+	img { border: 0 }
+	
+	
+	
+    /* 本例子css -------------------------------------- */
+	.slideBox{ position:relative; width:100%; ; overflow:hidden; margin:o auto; }
+	.slideBox .hd{ position:absolute; height:28px; line-height:28px; bottom:0; right:0; z-index:1; }
+	.slideBox .hd li{ display:inline-block; width:5px; height:5px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:#333; text-indent:-9999px; overflow:hidden; margin:0 6px;   }
+	.slideBox .hd li.on{ background:#fff;  }
+	.slideBox .bd{ position:relative; z-index:0; }
+	.slideBox .bd li{ position:relative;  }
+	.slideBox .bd li img{ width:100%;  display:block;   }
+	.slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); /* 取消链接高亮 */ }
+	.slideBox .bd li .tit{ display:block; width:100%;  position:absolute; bottom:0; text-indent:10px; height:28px; line-height:28px; background:url(images/focusBg.png) repeat-x; color:#fff;   }
+    .inp{
+        width: 100%;
+    }
+    
+   </style> 
+<body>
+    <div class="heat">
+        <div class="test">
+       
+      <input type="text" class="right" placeholder="搜索商品">  
+     <div class="left"></div>
+    </div>
+     </div>
+     <div class="sr">
+        	<div id="slideBox" class="slideBox">
+
+				<div class="bd">
+				<div class="inp">
+					<ul>
+						<li>
+							<img src="image/02(1).png" alt="" width="100%">
+							
+						</li>
+						<li>
+							<img src="image/02(1).png" alt="" width="100%">
+						</li>
+						<li>
+							<img src="image/02(1).png" alt="" width="100%">
+							
+						</li>
+						
+					</ul>
+					</div>
+				</div>
+
+				<div class="hd">
+					<ul></ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#slideBox",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					mainCell:".bd ul", 
+					effect:"leftLoop", 
+					autoPage:true //自动分页
+				});
+			</script>
+     </div>
+     <div class="ter">
+        <div class="yun">
+            <div class="shang">&#xe63c;</div>
+            <span class="wen">会员中心</span>
+        </div>
+        <div class="yun">
+            <div class="shang1">&#xe774;</div>
+            <span class="wen">生活缴费</span>
+        </div>
+        <div class="yun">
+            <div class="shang2">&#xe6f2;</div>
+            <span class="wen">积分兑换</span>
+        </div>
+        <div class="yun">
+            <div class="shang3">&#xe6e3;</div>
+            <span class="wen">商品分类</span>
+        </div>
+        </div>
+        <div class="cgue">
+        <div class="kuer">
+        <div class="heng"></div>
+        <div class="sut">节日礼品</div>
+        <div class="heng"></div>
+        </div>
+        </div>
+        
+        <div class="boxx">
+        <div class="jiexian1">
+        <div class="box">
+            <div class="box01">
+                  <div class="tbo">
+                     <div class="ipp">
+                      <div class="wee1">南京特产</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip_"></div>
+                    </div>
+                    
+                    <div class="tbo_">
+                     <div class="ipp">
+                      <div class="wee1">菌菇礼盒</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip"></div>
+                    </div>
+                    
+                    
+                    
+                   <div class="err_t1">
+                     <div class="ipp_">
+                      <div class="wee1">卡卷礼盒</div>
+                   <div class="wew">质出品质  造就口碑</div>
+
+                </div>
+                   <div class="ip_1_ noe"></div>
+               </div>
+               <div class="err1">
+                     <div class="ipp_">
+                      <div class="wee1">食品礼包</div>
+                   <div class="wew">质出品质  造就口碑</div>
+
+                </div>
+                   <div class="ip_1 two"></div>
+               </div>
+                </div>
+
+
+            <div class="box_">
+               <div class="tbo1">
+                  <div class="tu">
+                  </div>
+                   <div class="wee">节日福利</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                  
+               </div> 
+               <div class="err">
+
+                   <div class="ipp_">
+                      <div class="wee1">五谷杂粮</div>
+                   <div class="wew">质出品质  造就口碑</div>
+
+                </div>
+                   <div class="ip_1"></div>
+               </div>
+               <div class="err1">
+                     <div class="ipp_">
+                      <div class="wee1">时令海鲜</div>
+                   <div class="wew">质出品质  造就口碑</div>
+
+                </div>
+                   <div class="ip_11"></div>
+               </div>
+               
+            </div>
+            </div>
+        </div>
+        </div>
+        
+         <div class="cgue">
+        <div class="kuer">
+        <div class="heng1_"></div>
+        <div class="sut_">虚拟卡卷</div>
+        <div class="heng1_"></div>
+        </div>
+        </div>
+        
+        
+        
+       
+        
+        <div class="boxx_">
+        <div class="jiexian1">
+        <div class="box">
+            <div class="box01_">
+                  <div class="tbo_er">
+                     <div class="ipp">
+                      <div class="wee1">爱奇艺会员</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip_ c1"></div>
+                    </div>
+                    
+                    <div class="tboo">
+                     <div class="ipp">
+                      <div class="wee1">优酷会员</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip c2"></div>
+                    </div>
+                    <div class="qirr">
+                         <div class="ipp">
+                      <div class="wee1">唯品会卡</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip_ c3"></div>
+                    </div>
+                    
+                        <div class="ipp">
+                      <div class="wee1">天猫银泰卡</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip_ c4"></div>
+                </div>
+
+
+            <div class="box_1">
+               <div class="tbo1">
+                  <div class="tu h2">
+                  </div>
+                   <div class="wee r1">会员卡券</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                  
+               </div>
+               <div class="qirr">
+                       <div class="ipp">
+                      <div class="wee1">京东E卡</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip_ c5"></div>
+               </div>
+                   <div class="ipp">
+                      <div class="wee1">亚马逊卡</div>z
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip_ c6"></div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+      <div class="vre">
+          <div class="xiana">
+              <div class="qiu"></div>
+              <div class="qiuuq">旅游推荐</div>
+              <div class="qiua"></div>
+          </div>
+      </div>
+        
+
+       <div class="jiexian1">
+        <div class="box_tr">
+            <div class="box01_1">
+                  <div class="tbo">
+                     <div class="ipp">
+                      <div class="wee1">携程任我行</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip_ c7"></div>
+                    </div>
+                    
+                    <div class="tbo_">
+                     <div class="ipp">
+                      <div class="wee1">携程任我游</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip c8"></div>
+                    </div>
+                    
+                    
+                </div>
+
+
+            <div class="box_er">
+               <div class="tbo1">
+                  <div class="tu h3">
+                  </div>
+                   <div class="wee r2">畅玩世界</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                  
+               </div> 
+                 </div> 
+                   </div> 
+                     </div> 
+        
+          <div class="vre">
+          <div class="xiana">
+              <div class="qiu_"></div>
+              <div class="qiuu_a">潮品推荐</div>
+              <div class="qiua_"></div>
+          </div>
+      </div>
+          <div class="boxx">
+        <div class="jiexian1">
+        <div class="box">
+            <div class="box01">
+                  <div class="tbo">
+                     <div class="ipp">
+                      <div class="wee1">双立人锅具</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip_ c9"></div>
+                    </div>
+                    
+                    <div class="tbo_">
+                     <div class="ipp">
+                      <div class="wee1">飞利浦剃须刀</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip c10"></div>
+                    </div>
+                    
+                    
+                    
+                   <div class="err_t1">
+                     <div class="ipp_">
+                      <div class="wee1">象印保温杯</div>
+                   <div class="wew">质出品质  造就口碑</div>
+
+                </div>
+                   <div class="ip_1_ noe c13"></div>
+               </div>
+               <div class="err1">
+                     <div class="ipp_">
+                      <div class="wee1">智能手环</div>
+                   <div class="wew">质出品质  造就口碑</div>
+
+                </div>
+                   <div class="ip_1 two c14"></div>
+               </div>
+                </div>
+
+
+            <div class="box_">
+               <div class="tbo1">
+                  <div class="tu h4">
+                  </div>
+                   <div class="wee r3">潮流新品</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                  
+               </div> 
+               <div class="err">
+
+                   <div class="ipp_">
+                      <div class="wee1">折叠桌椅</div>
+                   <div class="wew">质出品质  造就口碑</div>
+
+                </div>
+                   <div class="ip_1 c11"></div>
+               </div>
+               <div class="err1">
+                     <div class="ipp_">
+                      <div class="wee1">南极人暖手</div>
+                   <div class="wew">质出品质  造就口碑</div>
+
+                </div>
+                   <div class="ip_11 c12"></div>
+               </div>
+               
+            </div>
+            </div>
+        </div>
+        </div>
+        
+         <div class="cgue">
+        <div class="kuer">
+        <div class="heng1_1_2"></div>
+        <div class="sut_1_2">体检健身</div>
+        <div class="heng1_1_2"></div>
+        </div>
+        </div>
+        
+        
+        
+         <div class="boxx_w1">
+        <div class="jiexian1">
+        <div class="box">
+            <div class="box01_w">
+                  <div class="tbo_er">
+                     <div class="ipp">
+                      <div class="wee1">青年体检</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip_ c15"></div>
+                    </div>
+                    
+                    <div class="tboo">
+                     <div class="ipp">
+                      <div class="wee1">老人体检</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip c16"></div>
+                    </div>
+                   
+                         <div class="ipp">
+                      <div class="wee1">健身年卡</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip_ c17"></div>
+                   
+                </div>
+
+
+            <div class="box_1w">
+               <div class="tbo1">
+                  <div class="tu h5">
+                  </div>
+                   <div class="wee r4">健康生活</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                  
+               </div>
+              
+                       <div class="ipp">
+                      <div class="wee1">健身月卡</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                 <div class="ip_ c18"></div>
+               
+                  
+            </div>
+            </div>
+        </div>
+        </div>
+
+        
+        
+          <div class="vre">
+          <div class="xiana">
+              <div class="qiu_q"></div>
+              <div class="qiuu_">培训教育</div>
+              <div class="qiua_qq"></div>
+          </div>
+      </div>
+       
+        <div class="boxx_w1">
+        <div class="jiexian1">
+        <div class="box">
+            <div class="box01_w">
+                  <div class="tbo_er">
+                     <div class="ipp">
+                      <div class="wee1">金融管理</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip_ c19"></div>
+                    </div>
+                    
+                    <div class="tboo">
+                     <div class="ipp">
+                      <div class="wee1">本科英语</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip c20"></div>
+                    </div>
+                    <div class="qirrw">
+                         <div class="ipp">
+                      <div class="wee1">早教体验</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                   <div class="ip_ c21"></div>
+                    </div>
+                </div>
+
+
+            <div class="box_1w">
+               <div class="tbo1">
+                  <div class="tu h6">
+                  </div>
+                   <div class="wee r5">特色教育</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                  
+               </div>
+               <div class="qirr_v1">
+                       <div class="ipp">
+                      <div class="wee1">硕研考试</div>
+                   <div class="wew">质出品质  造就口碑</div>
+                </div>
+                 <div class="ip_ c22"></div>
+               </div>
+                  
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="vera"></div>
+        <div class="vtv">
+
+             <div class="yun1">
+            <div class="shang_">&#xe607;</div>
+            <span class="wen  te">首页</span>
+        </div>
+        <div class="yun1">
+            <div class="shang_aa">&#xe634;</div>
+            <span class="wen">分类</span>
+        </div>
+        <div class="yun1">
+            <div class="shang_aa">&#xe630;</div>
+            <span class="wen">购物车</span>
+        </div>
+        <div class="yun1">
+            <div class="shang_aa">&#xe702;</div>
+            <span class="wen">我的</span>
+        </div>
+        </div>   
+        
+</body>
+</html>

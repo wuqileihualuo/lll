@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html body{
+    width: auto;
+}
+html,body{
+    height: 100%;
+    background: #fff;
+    font-size: 14px;
+    font-family: "微软雅黑"
+}
+ol, ul,li{
+    list-style-type: none;
+}
+img,input{
+    border: none;
+}
+input{
+    outline: none;
+}
+fr{
+    float: left;
+}
+/*a,a:hover,a:visited{
+    text-decoration: none;
+}*/

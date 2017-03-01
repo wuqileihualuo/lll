@@ -1,0 +1,467 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ padding:0; margin:0;}
+body{ background:url(../images/bg.jpg) center top no-repeat; overflow:hidden; width:100%; height:100%; position:absolute; font-family: "Georgia", Tahoma, Sans-Serif;}
+ul,li{ list-style-type:none;}
+a{ text-decoration:none; cursor:pointer;}
+img{ border:none;}
+
+/*-----------------------------------------------*/
+
+
+
+.wave_01{ width:100%; height:200px; background:url(../images/wave_01.png) center top no-repeat; bottom:-50px; position:absolute; z-index:6;}
+.wave_02{ width:100%; height:200px; background:url(../images/wave_02.png) center top no-repeat; bottom:0px; position:absolute; z-index:3;}
+.wave_03{ width:100%; height:200px; background:url(../images/wave_03.png) center top no-repeat; bottom:50px; position:absolute; z-index:0;}
+
+
+.wave_01
+{
+animation: wave_01 3s linear 0s infinite alternate;
+-moz-animation: wave_01 3s linear 0s infinite alternate;	/* Firefox */
+-webkit-animation: wave_01 3s linear 0s infinite alternate;	/* Safari 和 Chrome */
+-o-animation: wave_01 3s linear 0s infinite alternate;	/* Opera */
+}
+
+@keyframes wave_01
+{
+0%   {bottom:0px;}
+100% {bottom:-50px;}
+}
+
+@-moz-keyframes wave_01 /* Firefox */
+{
+0%   {bottom:0px;}
+100% {bottom:-50px;}
+}
+
+@-webkit-keyframes wave_01 /* Safari 和 Chrome */
+{
+0%   {bottom:0px;}
+100% {bottom:-50px;}
+}
+
+@-o-keyframes wave_01 /* Opera */
+{
+0%   {bottom:0px;}
+100% {bottom:-50px;}
+}
+
+/*-------------------------------------------------------------*/
+
+.wave_02
+{
+animation: wave_02 3s linear 0s infinite alternate;
+-moz-animation: wave_02 3s linear 0s infinite alternate;	/* Firefox */
+-webkit-animation: wave_02 3s linear 0s infinite alternate;	/* Safari 和 Chrome */
+-o-animation: wave_02 3s linear 0s infinite alternate;	/* Opera */
+}
+
+@keyframes wave_02
+{
+0%   {bottom:0px;}
+100% {bottom:50px;}
+}
+
+@-moz-keyframes wave_02 /* Firefox */
+{
+0%   {bottom:0px;}
+100% {bottom:50px;}
+}
+
+@-webkit-keyframes wave_02 /* Safari 和 Chrome */
+{
+0%   {bottom:0px;}
+100% {bottom:50px;}
+}
+
+@-o-keyframes wave_02 /* Opera */
+{
+0%   {bottom:0px;}
+100% {bottom:50px;}
+}
+
+
+
+/*-------------------------------------------------------------*/
+
+.wave_03
+{
+animation: wave_03 3s linear 0s infinite alternate;
+-moz-animation: wave_03 3s linear 0s infinite alternate;	/* Firefox */
+-webkit-animation: wave_03 3s linear 0s infinite alternate;	/* Safari 和 Chrome */
+-o-animation: wave_03 3s linear 0s infinite alternate;	/* Opera */
+}
+
+@keyframes wave_03
+{
+0%   {bottom:100px;}
+100% {bottom:50px;}
+}
+
+@-moz-keyframes wave_03 /* Firefox */
+{
+0%   {bottom:100px;}
+100% {bottom:50px;}
+}
+
+@-webkit-keyframes wave_03 /* Safari 和 Chrome */
+{
+0%   {bottom:100px;}
+100% {bottom:50px;}
+}
+
+@-o-keyframes wave_03 /* Opera */
+{
+0%   {bottom:100px;}
+100% {bottom:50px;}
+}
+
+/*-------------------------------------------------------------*/
+.fish_01{ width:228px; height:139px; background:url(../images/fish_02.png) no-repeat; bottom:0px; position:absolute; z-index:5; left:30%;}
+
+/*-------------------------------------------------------------*/
+
+.fish_01
+{
+animation: fish_01 5s linear 0s infinite normal;
+-moz-animation: fish_01 5s linear 0s infinite normal;	/* Firefox */
+-webkit-animation: fish_01 5s linear 0s infinite normal;	/* Safari 和 Chrome */
+-o-animation: fish_01 5s linear 0s infinite normal;	/* Opera */
+}
+
+@keyframes fish_01
+{
+	0%		{transform: rotate(0deg);left:20%; bottom:0px;}
+	25%		{transform: rotate(-20deg);left:15%; bottom:80px;}
+	50%		{transform: rotate(-40deg);left:10%; bottom:160px;}
+	55%		{transform: rotate(-60deg);left:5%;  bottom:80px;}
+	70%		{transform: rotate(-80deg);left:0%; bottom:0px;}
+	100%	{transform: rotate(-100deg);left:0%;  bottom:-200px;}
+
+}
+
+@-moz-keyframes fish_01 /* Firefox */
+{
+	0%		{-moz-transform: rotate(0deg);left:20%; bottom:0px;}
+	25%		{-moz-transform: rotate(-20deg);left:15%; bottom:80px;}
+	50%		{-moz-transform: rotate(-40deg);left:10%; bottom:160px;}
+	55%		{-moz-transform: rotate(-60deg);left:5%;  bottom:80px;}
+	70%		{-moz-transform: rotate(-80deg);left:0%; bottom:0px;}
+	100%	{-moz-transform: rotate(-100deg);left:0%;  bottom:-200px;}
+}
+
+@-webkit-keyframes fish_01 /* Safari 和 Chrome */
+{	
+	0%		{-webkit-transform: rotate(0deg);left:20%; bottom:0px;}
+	25%		{-webkit-transform: rotate(-20deg);left:15%; bottom:80px;}
+	50%		{-webkit-transform: rotate(-40deg);left:10%; bottom:160px;}
+	55%		{-webkit-transform: rotate(-60deg);left:5%;  bottom:80px;}
+	70%		{-webkit-transform: rotate(-80deg);left:0%; bottom:0px;}
+	100%	{-webkit-transform: rotate(-100deg);left:0%;  bottom:-200px;}	
+
+}
+
+@-o-keyframes fish_01 /* Opera */
+{
+	0%		{-o-transform: rotate(0deg);left:20%; bottom:0px;}
+	25%		{-o-transform: rotate(-20deg);left:15%; bottom:80px;}
+	50%		{-o-transform: rotate(-40deg);left:10%; bottom:160px;}
+	55%		{-o-transform: rotate(-60deg);left:5%;  bottom:80px;}
+	70%		{-o-transform: rotate(-80deg);left:0%; bottom:0px;}
+	100%	{-o-transform: rotate(-100deg);left:0%;  bottom:-200px;}
+}
+
+
+
+/*-------------------------------------------------------------*/
+.fish_02{ width:235px; height:94px; background:url(../images/fish_01.png) no-repeat; bottom:0px; position:absolute; z-index:2; left:40%;}
+
+/*-------------------------------------------------------------*/
+
+.fish_02
+{
+animation: fish_02 5s linear 2s infinite normal;
+-moz-animation: fish_02 5s linear 2s infinite normal;	/* Firefox */
+-webkit-animation: fish_02 5s linear 2s infinite normal;	/* Safari 和 Chrome */
+-o-animation: fish_02 5s linear 2s infinite normal;	/* Opera */
+}
+
+@keyframes fish_02
+{
+	0%		{transform: rotate(0deg);left:40%; bottom:100px;}
+	25%		{transform: rotate(-20deg);left:30%; bottom:200px;}
+	50%		{transform: rotate(-40deg);left:20%; bottom:300px;}
+	55%		{transform: rotate(-50deg);left:10%;  bottom:200px;}
+	70%		{transform: rotate(-60deg);left:0%; bottom:100px;}
+	100%	{transform: rotate(-70deg);left:-10%;  bottom:-100px;}
+
+
+}
+
+@-moz-keyframes fish_02 /* Firefox */
+{
+	0%		{-moz-transform: rotate(0deg);left:40%; bottom:100px;}
+	25%		{-moz-transform: rotate(-20deg);left:30%; bottom:200px;}
+	50%		{-moz-transform: rotate(-40deg);left:20%; bottom:300px;}
+	55%		{-moz-transform: rotate(-50deg);left:10%;  bottom:200px;}
+	70%		{-moz-transform: rotate(-60deg);left:0%; bottom:100px;}
+	100%	{-moz-transform: rotate(-70deg);left:-10%;  bottom:-100px;}
+}
+
+@-webkit-keyframes fish_02 /* Safari 和 Chrome */
+{	
+	0%		{-webkit-transform: rotate(0deg);left:40%; bottom:100px;}
+	25%		{-webkit-transform: rotate(-20deg);left:30%; bottom:200px;}
+	50%		{-webkit-transform: rotate(-40deg);left:20%; bottom:300px;}
+	55%		{-webkit-transform: rotate(-50deg);left:10%;  bottom:200px;}
+	70%		{-webkit-transform: rotate(-60deg);left:0%; bottom:100px;}
+	100%	{-webkit-transform: rotate(-70deg);left:-10%;  bottom:-100px;}
+
+}
+
+@-o-keyframes fish_02 /* Opera */
+{
+	0%		{-o-transform: rotate(0deg);left:40%; bottom:100px;}
+	25%		{-o-transform: rotate(-20deg);left:30%; bottom:200px;}
+	50%		{-o-transform: rotate(-40deg);left:20%; bottom:300px;}
+	55%		{-o-transform: rotate(-50deg);left:10%;  bottom:200px;}
+	70%		{-o-transform: rotate(-60deg);left:0%; bottom:100px;}
+	100%	{-o-transform: rotate(-70deg);left:-10%;  bottom:-100px;}
+}
+
+ 
+/*-----------------------------------------------*/
+.cloud_01{ width:400px; height:150px; position:absolute; left:5%; background:url(../images/cloud_01.png) center bottom no-repeat; z-index:4;}
+.cloud_02{ width:211px; height:280px; position:absolute; left:35%; background:url(../images/cloud_02.png) center bottom no-repeat; z-index:4;}
+.cloud_03{ width:400px; height:180px; position:absolute; left:60%; background:url(../images/cloud_03.png) center bottom no-repeat; z-index:4;}
+
+
+
+/*-------------------------------------------------------------*/
+
+.cloud_01
+{
+animation: cloud_01 2s linear 0s infinite alternate;
+-moz-animation: cloud_01 2s linear 0s infinite alternate;	/* Firefox */
+-webkit-animation: cloud_01 2s linear 0s infinite alternate;	/* Safari 和 Chrome */
+-o-animation: cloud_01 2s linear 0s infinite alternate;	/* Opera */
+}
+
+@keyframes cloud_01
+{
+0%   {height:150px;}
+100% {height:200px;}
+}
+
+@-moz-keyframes cloud_01 /* Firefox */
+{
+0%   {height:150px;}
+100% {height:200px;}
+}
+
+@-webkit-keyframes cloud_01 /* Safari 和 Chrome */
+{
+0%   {height:150px;}
+100% {height:200px;}
+}
+
+@-o-keyframes cloud_01 /* Opera */
+{
+0%   {height:150px;}
+100% {height:200px;}
+}
+
+/*-------------------------------------------------------------*/
+
+.cloud_02
+{
+animation: cloud_02 2s linear 0s infinite alternate;
+-moz-animation: cloud_02 2s linear 0s infinite alternate;	/* Firefox */
+-webkit-animation: cloud_02 2s linear 0s infinite alternate;	/* Safari 和 Chrome */
+-o-animation: cloud_02 2s linear 0s infinite alternate;	/* Opera */
+}
+
+@keyframes cloud_02
+{
+0%   {height:280px;}
+100% {height:200px;}
+}
+
+@-moz-keyframes cloud_02 /* Firefox */
+{
+0%   {height:280px;}
+100% {height:200px;}
+}
+
+@-webkit-keyframes cloud_02 /* Safari 和 Chrome */
+{
+0%   {height:280px;}
+100% {height:200px;}
+}
+
+@-o-keyframes cloud_02 /* Opera */
+{
+0%   {height:280px;}
+100% {height:200px;}
+}
+
+/*-------------------------------------------------------------*/
+.cloud_03
+{
+animation: cloud_03 2s linear 0s infinite alternate;
+-moz-animation: cloud_03 2s linear 0s infinite alternate;	/* Firefox */
+-webkit-animation: cloud_03 2s linear 0s infinite alternate;	/* Safari 和 Chrome */
+-o-animation: cloud_03 2s linear 0s infinite alternate;	/* Opera */
+}
+
+@keyframes cloud_03
+{
+0%   {height:180px;}
+100% {height:280px;}
+}
+
+@-moz-keyframes cloud_03 /* Firefox */
+{
+0%   {height:180px;}
+100% {height:280px;}
+}
+
+@-webkit-keyframes cloud_03 /* Safari 和 Chrome */
+{
+0%   {height:180px;}
+100% {height:280px;}
+}
+
+@-o-keyframes cloud_03 /* Opera */
+{
+0%   {height:180px;}
+100% {height:280px;}
+}
+
+/*-------------------------------------------------------------*/
+
+.moon{ width:150px; height:174px; background:url(../images/moon.png) no-repeat; left:20%; top:100px; position:absolute; z-index:1;}
+
+
+
+
+/*-------------------------------------------------------------*/
+.moon
+{
+animation: moon 2s linear 0s infinite alternate;
+-moz-animation: moon 2s linear 0s infinite alternate;	/* Firefox */
+-webkit-animation: moon 2s linear 0s infinite alternate;	/* Safari 和 Chrome */
+-o-animation: moon 2s linear 0s infinite alternate;	/* Opera */
+}
+
+@keyframes moon
+{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(-20deg);}
+}
+
+@-moz-keyframes moon /* Firefox */
+{
+	0%{-moz-transform: rotate(0deg);}
+	100%{-moz-transform: rotate(-20deg);}
+}
+
+@-webkit-keyframes moon /* Safari 和 Chrome */
+{
+	0%{-webkit-transform: rotate(0deg);}
+	100%{-webkit-transform: rotate(-20deg);}
+}
+
+@-o-keyframes moon /* Opera */
+{
+	0%{-o-transform: rotate(0deg);}
+	100%{-o-transform: rotate(-20deg);}
+}
+/*-----------------------------------------------------*/
+
+.cloud_04{ width:135px; height:82px; top:190px; position:absolute; z-index:3; background:url(../images/cloud_04.png) no-repeat;}
+
+
+/*-------------------------------------------------------------*/
+.cloud_04
+{
+animation: cloud_04 45s linear 0s infinite alternate;
+-moz-animation: cloud_04 45s linear 0s infinite alternate;	/* Firefox */
+-webkit-animation: cloud_04 45s linear 0s infinite alternate;	/* Safari 和 Chrome */
+-o-animation: cloud_04 45s linear 0s infinite alternate;	/* Opera */
+}
+
+@keyframes cloud_04
+{
+	0%{left:1000px;}
+	100%{left:-1000px;}
+}
+
+@-moz-keyframes cloud_04 /* Firefox */
+{
+	0%{left:1000px;}
+	100%{left:-1000px;}
+}
+
+@-webkit-keyframes cloud_04 /* Safari 和 Chrome */
+{
+	0%{left:1000px;}
+	100%{left:-1000px;}
+}
+
+@-o-keyframes cloud_04 /* Opera */
+{
+	0%{left:1000px;}
+	100%{left:-1000px;}
+}
+/*-----------------------------------------------------*/
+
+.ship{ width:412px; height:409px; background:url(../images/ship.png) no-repeat; position:absolute; bottom:80px; z-index:3px; right:20%;}
+
+
+/*-------------------------------------------------------------*/
+
+.ship
+{
+animation: ship 2s linear 0s infinite alternate;
+-moz-animation: ship 2s linear 0s infinite alternate;	/* Firefox */
+-webkit-animation: ship 2s linear 0s infinite alternate;	/* Safari 和 Chrome */
+-o-animation: ship 2s linear 0s infinite alternate;	/* Opera */
+}
+
+@keyframes ship
+{
+	0%		{transform: rotate(0deg);}
+	100%		{transform: rotate(-20deg);}
+
+
+
+}
+
+@-moz-keyframes ship /* Firefox */
+{
+	0%		{-moztransform: rotate(0deg);}
+	100%		{-moztransform: rotate(-20deg);}
+}
+
+@-webkit-keyframes ship /* Safari 和 Chrome */
+{	
+	0%		{-webkit-transform: rotate(0deg);}
+	100%		{-webkit-transform: rotate(-20deg);}
+
+}
+
+@-o-keyframes ship /* Opera */
+{
+	0%		{-o-transform: rotate(0deg);}
+	100%		{-o-transform: rotate(-20deg);}
+}
+
+ 
+/*-----------------------------------------------*/
+
+.say{ width:600px; height:100px; text-shadow:3px 3px 3px #000; font-size:20px; color:#FFF; position:absolute; right:100px; bottom:50px; z-index:20;}
+
+

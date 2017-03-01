@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+   <div class="birds"></div>
+   <div class="mou-01"></div>
+   <div class="mou-02"></div>
+   <div class="mou-03"></div>
+   <div class="mou-04"></div>
+    <div class="span">JQuery 实现了水墨风格动画</div>
+    
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(function(){
+      var w_w = $(window).width(); //获取屏幕的宽度
+    
+    
+    
+    var i = w_w;
+    var set01;
+    
+    // 控制鸟的飞行的方法
+    function time01(){
+        
+        set01 = setInterval(function(){
+            if(i > - w_w){
+                i -= 2;
+                $(".birds").css({"left": i + "px"});
+            } else {
+                clearInterval(set01);
+            }
+        }, 1000/24);        
+    }
+        
+        
+        
+    time01();//第一屏山的动画
+        
+        
+        
+      var j = 0;
+    var set02;
+    function time02 (){ //这个第一层山的动画
+        set02 = setInterval(function(){
+            if(j < w_w/2){
+                j++;
+                $(".mou-01").css({"left": -j + "px"});
+                $(".mou-02").css({"right": -j + "px"});    
+            } else {
+                clearInterval(set02);
+            }
+        }, 1000/24)           
+    }
+    
+    time02 ();  //这个第一层山的动画调用
+    
+    
+    var k = 40;
+    var set03;
+    function time03(){ //这个是第三层动画方法
+        set03 = setInterval(function(){
+            if(k < 70){
+                k += 0.05;
+                $(".mou-03").css({"background-size": k + "%"});
+            } else {
+                time04 ();
+                clearInterval(set03);
+            }
+        }, 1000/24)        
+    }
+
+    
+    time03(); //调用第三层动画
+    
+    var l = 70;
+    var m = 100;
+    var set04;
+    function time04 (){ //第三层动画第二个动作
+        set04 = setInterval(function(){
+            if(l > 50){
+                l -= 0.05;
+                m -= 0.2;
+                $(".mou-03").css({"background-size": l + "%", "background-position-x": m + "px"});
+            } else {
+                clearInterval(set04);
+                setTimeout(function(){
+                    $(".span").fadeIn(2000);
+                }, 1000)
+            }
+        }, 1000/24)        
+    }
+    
+    
+    var n = 70;
+    var set05;
+    function time05(){ //第四屏动画
+    set05 = setInterval(function(){
+            if(n < 100){
+                n += 0.1;
+                $(".mou-04").css({"background-size": n + "%"});
+            } else {
+                clearInterval(set05);
+            } 
+        }, 1000/24)        
+    }
+    
+    time05();
+
+    })
+
+</script>

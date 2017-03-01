@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .test{
+            width: 1000px;
+            height: 1000px;;
+            margin:0 auto;
+            background: url(images/02.png)no-repeat;
+            position: relative;
+        }
+        .stet{
+            width: 311px;
+            height:311px ;
+            background: url(images/01.png) no-repeat;
+            position: absolute;
+            left:42%;
+            top:334px;
+            transform: rotateZ();
+    
+     
+    </style>
+</head>
+<body>
+    <div class="test"></div>
+    <div class="stet"></div>
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script>
+$(function(){
+    
+     
+    var status=0;
+    
+    
+ $(".stet").click(function(){
+     if(status==0){
+         status=1;
+          move();
+     }
+     
+      })
+ 
+ 
+ 
+     function move(){
+          var ran =Math.random() *360;
+           var i=0;
+          var  set=setInterval(function(){
+          if(i<ran){
+           i++;
+           $(".stet").css({"transform":"rotateZ("+i+"deg)"} )
+       }else{
+           clearInterval(set);
+            status=0;
+       }
+       
+       
+     },1000/24);
+         
+     }
+
+})
+
+
+</script>

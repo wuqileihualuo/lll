@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>月付房租办理</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div class="head">爱租哪
+     <a href="" class="head-1"></a>
+    </div>
+    <div class="tead">
+        <div class="yuan3">
+            <div class="shang1"></div>
+            <span class="wen">审核</span>
+        </div>
+        <div class="yuan2">
+             <div class="ser"></div>
+            <span class="wen">租房资料</span>
+        </div>
+        <div class="yuan">
+             <div class="shang">
+                 <div class="ti"></div>
+             </div>
+            <span class="wen">身份信息</span>
+        </div>
+        <div class="tuew-con">
+        <div class="tuew"></div>
+        <div class="tuew1"></div>
+           </div>
+        </div>
+         <div class="test_">
+                 <div class="qi-noe  t5">姓名
+                 <input type="text" class="se1" placeholder="请输入姓名"></div>
+                 <div class="qi-noe t2">证件号
+                 <input type="text" class="se" placeholder="请输入身份证号码"></div>
+                 
+                 <div class="qi-noe t3">银行卡号
+                  <input type="text" class="se" placeholder="请输入常用银行卡卡号"></div>
+                 <div class="qi-noe">
+                 <div class="t6">身份</div>
+                 <div class="pic   h">
+                      <div class="zaizhi">在职</div>
+                 </div>
+                  <div class="pic  w">
+                      <div class="zaizhi">学生</div>
+                 </div>
+                 </div>
+                 <div class="qi-noe ">
+                 <div class="t7">上传附件</div>
+                 <div class="se2"> 请上传工牌、名片、劳动合同、在职证明，四选一即可
+                   <div class="xiangji"></div>
+                  <input type="file" class="xiangji_">
+                 </div>
+                </div>
+                 <div class="qi-noe t8">身份证
+                  <input type="text" class="se" placeholder="需看清合同信息">
+                  <div class="xiangji"></div>
+                  <input type="file" class="xiangji_">
+                  </div>
+           
+         
+       <div class="test1-wer">下一步</div>
+    </div> 
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script>
+$(function(){
+      var index_check;
+    $("pic").eq(0).addClass("h").siblings(".pic").removeClass("h");
+    $(".pic").click(function(){
+        
+   
+         $(this).eq(0).addClass("h").siblings(".pic").removeClass("h");
+    })
+    
+    
+     
+                    
+})
+
+
+
+</script>
